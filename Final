@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulação de Arrays</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Nomes</h1>
+
+        <div class="botoes">
+            <button onclick="adicionarFinal()">Adicionar nome ao final</button>
+            <button onclick="adicionarInicio()">Adicionar no início</button>
+            <button onclick="removerUltimo()">Remover último</button>
+            <button onclick="removerPrimeiro()">Remover primeiro</button>
+        </div>
+
+        <div class="botoes">
+            <button onclick="contarNomesLongos()">Contar nomes com mais de 5 letras</button>
+            <button onclick="mostrarMaiusculosForEach()">Mostrar MAIÚSCULO (forEach)</button>
+            <button onclick="filtrarNomesLongos()">Filtrar nomes > 5 letras</button>
+            <button onclick="mapearMaiusculos()">Map para MAIÚSCULO</button>
+            <button onclick="mostrarListaOriginal()">Mostrar lista original</button>
+        </div>
+
+        <h2>Nomes:</h2>
+        <ul id="listaNomes"></ul>
+
+        <div id="resultado" class="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
